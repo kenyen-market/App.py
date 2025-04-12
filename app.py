@@ -23,3 +23,6 @@ def notify():
         return f"Email sent! Status: {response.status_code}"
     except Exception as e:
         return f"Email 發送失敗：{e}"
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Render 會提供 PORT 環境變數
+    app.run(host="0.0.0.0", port=port)

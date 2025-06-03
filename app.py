@@ -116,10 +116,6 @@ else:
     st.info("目前尚無交易紀錄。")
 import time
 
-# Disconnect existing ngrok tunnels before starting a new one
-# 在啟動新的 ngrok 隧道之前，斷開所有現有的隧道
-ngrok.kill() # 將 disconnect() 改為 kill()
-
 public_url = ngrok.connect(8501)
 print(f"🔗 開啟網址：{public_url}")
 time.sleep(3)

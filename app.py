@@ -115,7 +115,5 @@ if st.session_state.purchase_log:
 else:
     st.info("目前尚無交易紀錄。")
 import time
-
-public_url = ngrok.connect(8501)
 print(f"🔗 開啟網址：{public_url}")
 time.sleep(3)

@@ -114,7 +114,6 @@ if st.session_state.purchase_log:
     st.download_button("📥 下載 CSV", csv, "交易紀錄.csv", "text/csv")
 else:
     st.info("目前尚無交易紀錄。")
-''')
 
 # 啟動 Streamlit + ngrok
 from pyngrok import ngrok

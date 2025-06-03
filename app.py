@@ -125,5 +125,5 @@ ngrok.kill() # 將 disconnect() 改為 kill()
 
 public_url = ngrok.connect(8501)
 print(f"🔗 開啟網址：{public_url}")
-treamlit run app.py &> /dev/null &
+st.treamlit run app.py &> /dev/null &
 time.sleep(3)
